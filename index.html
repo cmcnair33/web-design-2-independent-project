@@ -8,12 +8,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-196.png">
 </head>
 
 <body>
-  <header>
+  <ul class="skip-links">
+    <li><a href="#nav">Skip to navigation</a></li>
+    <li><a href="#main" tabindex="0">Skip to the main content</a></li>
+  </ul>
+
+  <header role="banner">
     <img src="images/logo-black.png" alt="logo">
-    <nav role="navigation">
+    <nav role="navigation" id="nav">
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="roster.html">ROSTER</a></li>
@@ -22,11 +29,11 @@
     </nav>
   </header>
 
-  <span class="smallblock">welcome to the</span>
-  <span class="blocktype">revol</span>
-  <span class="blocktype">ution</span>
-  <span class="smallblock">hockey club</span>
-  <main>
+  <main role="main" id="main">
+    <p class="smallblock">welcome to the</p>
+    <p class="blocktype">revol</p>
+    <p class="blocktype">ution</p>
+
     <section class="aboutus">
 
       <h1 class="title">ABOUT US</h1>
@@ -38,23 +45,26 @@
 
     <section class="aboutarena">
 
-      <h1 class="arenatitle">OUR ARENA</h1>
+      <h2 class="arenatitle">OUR ARENA</h2>
       <div class="ourarena">
         <img class="arena" src="images/arena.jpg" alt="The Smirnoff Ice Palace">
         <p class="arenabio">The Russian Revolution play each and every one of our home games at the luxurious Smirnoff Ice Palace in St. Petersburg, Russia, Sergei's hometown. The facility features both indoor and outdoor arenas, a state-of-the-art gym, a food court featuring gourmet options such as Subway and Booster Juice, and an honest, trustworthy pharmacy that isn't suspicious at all and definitely doesn't deserve the investigations.</p>
       </div>
     </section>
 
-  </main>
+    <footer>
+      <h3>CONTACT US</h3>
+      <p>INFO@REVOLUTIONHOCKEY.COM</p>
+      <ul>
+        <li><a href="https://www.instagram.com/cmcnair33/">INSTAGRAM</a></li>
+        <li><a href="https://twitter.com/easportsnhl">TWITTER</a></li>
+        <li><a href="https://www.ea.com/games/nhl/nhl-22/pro-clubs">THE EASHL</a></li>
+      </ul>
+    </footer>
 
-  <footer>
-    <h2>CONTACT US</h2>
-    <p>INFO@REVOLUTIONHOCKEY.COM</p>
-    <ul>
-      <li><a href="https://www.instagram.com/cmcnair33/">INSTAGRAM</a></li>
-      <li><a href="https://twitter.com/easportsnhl">TWITTER</a></li>
-      <li><a href="https://www.ea.com/games/nhl/nhl-22/pro-clubs">THE EASHL</a></li>
-    </ul>
+  </main>
+  <footer role="contentinfo">
+
   </footer>
 
 </body>
