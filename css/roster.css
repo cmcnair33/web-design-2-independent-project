@@ -1,4 +1,14 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
+ -moz-text-size-adjust: 100%;
+ -ms-text-size-adjust: 100%;
+ -webkit-text-size-adjust: 100%;
+ text-size-adjust: 100%;
   box-sizing: border-box;
   line-height: 1.5;
   font-family: 'Outfit', sans-serif;
@@ -85,11 +95,11 @@ footer a:hover {
 }
 
 header nav li {
-  padding: 2vw;
+  padding: 2.5vw;
 }
 
 header nav li:first-child {
-  padding-left: 0rem;
+  padding-left: 0;
 }
 
 .sergei {
@@ -153,45 +163,6 @@ header nav li:first-child {
   padding-bottom: 2vw;
 }
 
-.sergei img {
-  /* width: 28rem; */
-  /* width: 100%; */
-  /* margin-bottom: 0; */
-  /* transform: skewY(-20deg); */
-  /* padding-top: 0; */
-
-  /* new css properties */
-  /* a height of 100vw will force a square container */
-  height: 100vw;
-}
-
-.sergei .number {
-  color: #000;
-  /* transform: skewY(20); */
-  /* font-size: 140pt; */
-  font-size: 45vw;
-  /* margin-bottom: -11.5rem; */
-  /* margin-top: -2rem; */
-  font-weight: 900;
-  width: 100%;
-  /* new css properties */
-  position: absolute;
-  top: -70vw;
-}
-
-.bonk .number {
-  color: #000;
-  /* transform: skewY(20); */
-  /* font-size: 140pt; */
-  font-size: 45vw;
-  /* margin-bottom: -11.5rem; */
-  /* margin-top: -2rem; */
-  font-weight: 900;
-  width: 100%;
-  /* new css properties */
-  position: absolute;
-  top: 203vw;
-}
 
 .sergei .playerinfo {
   background-color: #fad1a6;
@@ -272,20 +243,144 @@ header nav li:first-child {
   text-transform: uppercase;
   /* new css property */
   /* force each span onto its own line */
-  display:block;
+  display: block;
 }
 
-/* New selectors */
-  /* Use a clipping mask instead of skewing the media */
-.sergei-clip {
+@media only screen and (min-width: 60em) {
+
+.playerinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sergei .playerinfo {
+  margin-bottom: -42.5vw;
+  padding-bottom: 5vw;
+}
+
+.bonk .playerinfo {
+  padding-bottom: 2.5vw;
+  padding-top: 1vw;
+  margin-bottom: -60vw;
+}
+.sergei .nickname {
+  /* font-size: 45pt; */
+  font-size: 6vw;
+  margin-bottom: -2vw;
+  background-color: #000;
+  text-align: center;
+  font-weight: 900;
+  color: #f82b47;
+  /* new css properties */
   position: relative;
-  width: 100%;
-  object-fit: scale-down;
-  margin-top: -20vw;
-  margin-bottom: -42vw;
-  transform: skewY(20deg);
-  margin-left: 0;
-  margin-right: 0;
+  margin-top: 0vw;
 }
 
+.bonk .nickname {
+  /* font-size: 45pt; */
+  font-size: 6vw;
+  margin-bottom: -2vw;
+  background-color: #000;
+  text-align: center;
+  font-weight: 900;
+  color: #f82b47;
+  /* new css properties */
+  position: relative;
+  margin-top: 50vw;
+}
+
+.sergei .name {
+  /* font-size: 20pt; */
+  font-size: 3vw;
+
+  margin-bottom: 27vw;
+  margin-top: 0;
+  background-color: #000;
+  text-align: center;
+  color: #fad1a6;
+  /* new css properties */
+  position: relative;
+  padding-bottom: 0vw;
+}
+
+.bonk .name {
+  /* font-size: 20pt; */
+  font-size: 3vw;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #000;
+  text-align: center;
+  color: #fad1a6;
+  /* new css properties */
+  position: relative;
+  padding-bottom: 0vw;
+}
+
+.vitals li {
+  text-align: right;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 400;
+  color: #f82b47;
+  font-size: 2vw;
+  padding-right: 5vw;
+}
+
+.vitals li::first-line {
+  margin-top: 5vw;
+}
+
+.stats {
+  text-align: left;
+  margin-top: 5vw;
+  color: #f82b47;
+  margin-bottom: 0;
+  font-size: 2vw;
+}
+.bio {
+  text-align: justify;
+  padding-left: 0;
+  padding-right: 5vw;
+}
+
+.statheader {
+  text-align: right;
+  padding-right: 5vw;
+  margin-top: 4vw;
+}
+
+.banner .blocktype {
+  font-size: 15vw;
+  margin-top: -16vw;
+}
+
+.banner .blocktype:first-child {
+  margin-top: -10vw;
+}
+
+.banner .blocktype:last-child {
+  margin-bottom: -15vw;
+}
+
+nav ul li a {
+  font-size: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+nav ul li a:first-child {
+  padding-left: 10vw;
+}
+
+footer h3, footer p, footer li a {
+  font-size: 2vw;
+}
+
+footer h3 {
+  padding-bottom: 2vw;
+  margin-top: 1vw;
+}
+
+footer {
+  margin-top: 60vw;
 }
