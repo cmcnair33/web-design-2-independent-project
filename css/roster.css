@@ -41,7 +41,7 @@ margin-top: 15rem;
 }
 
 footer h3 {
-  padding-top: 8.5rem;
+  padding-top: 1rem;
 }
 
 footer p {
@@ -63,7 +63,7 @@ footer ul {
 }
 
 header nav a {
-  color: #fad1a6;
+  color: #000;
   text-decoration: none;
   font-weight: 900;
 }
@@ -77,7 +77,7 @@ footer a {
 }
 
 header nav a:hover {
-  color: #000;
+  color: #fad1a6;
 }
 
 footer a:hover {
@@ -103,68 +103,54 @@ header nav li:first-child {
 .sergei .nickname {
   /* font-size: 45pt; */
   font-size: 12.9vw;
-  padding-right: 1rem;
-  padding-left: 1rem;
   margin-bottom: -1rem;
   background-color: #000;
-  display: flex;
-  align-items: center;
-  transform: skewY(-20deg);
+  text-align: center;
   font-weight: 900;
   color: #f82b47;
   /* new css properties */
   position: relative;
+  margin-top: -10vw;
 }
 
 .bonk .nickname {
   /* font-size: 45pt; */
   font-size: 12.9vw;
-  padding-right: 1rem;
-  padding-left: 1rem;
   margin-bottom: -1rem;
   background-color: #000;
-  display: flex;
-  align-items: center;
-  transform: skewY(-20deg);
+  text-align: center;
   font-weight: 900;
   color: #f82b47;
   /* new css properties */
   position: relative;
-  margin-top: 73vw;
+  margin-top: 55vw;
 }
 
 .sergei .name {
   /* font-size: 20pt; */
   font-size: 5.7vw;
-  padding-right: 1rem;
-  padding-left: 2.5rem;
-  margin-bottom: 0;
+
+  margin-bottom: 8rem;
   margin-top: 0;
   background-color: #000;
-  display: flex;
-  align-items: center;
+  text-align: center;
   color: #fad1a6;
-  transform: skewY(-20deg);
   /* new css properties */
   position: relative;
-  padding-bottom: 18vw;
+  padding-bottom: 0.5rem;
 }
 
 .bonk .name {
   /* font-size: 20pt; */
   font-size: 5.7vw;
-  padding-right: 1rem;
-  padding-left: 8rem;
   margin-bottom: 0;
   margin-top: 0;
   background-color: #000;
-  display: flex;
-  align-items: center;
+  text-align: center;
   color: #fad1a6;
-  transform: skewY(-20deg);
   /* new css properties */
   position: relative;
-  padding-bottom: 18vw;
+  padding-bottom: 0.5rem;
 }
 
 .sergei img {
@@ -204,44 +190,40 @@ header nav li:first-child {
   width: 100%;
   /* new css properties */
   position: absolute;
-  top: 200vw;
+  top: 203vw;
 }
 
 .sergei .playerinfo {
   background-color: #fad1a6;
   /* padding-top: 7rem; */
-  padding-top: 0;
+  padding-top: 1rem;
   /* margin-top: -10rem; */
-  margin-top: -21vw;
+  margin-top: -30vw;
 
   padding-bottom: 8rem;
-  margin-bottom: -19rem;
-  transform: skewY(-20deg);
+  margin-bottom: -18rem;
     /* clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%); */
 }
 
 .bonk .playerinfo {
   background-color: #fad1a6;
   /* padding-top: 7rem; */
-  padding-top: 0;
+  padding-top: 1rem;
   /* margin-top: -10rem; */
-  margin-top: -21vw;
+  margin-top: 0vw;
 
-  padding-bottom: 6rem;
-  margin-bottom: -20rem;
-  transform: skewY(-20deg);
+  padding-bottom: 4rem;
+  margin-bottom: -18rem;
     /* clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%); */
 }
 
 .vitals li {
-  text-align: right;
+  text-align: center;
   text-decoration: none;
   list-style: none;
   font-weight: 400;
   color: #f82b47;
-  transform: skewY(20deg);
-  padding-right: 1rem;
-  padding-left: 1rem;
+  font-size: 3.3vw;
 }
 
 .vitals li strong {
@@ -250,35 +232,33 @@ header nav li:first-child {
 
 .bio {
   text-align: justify;
-  transform: skewY(20deg);
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
 .stats {
-  text-align: right;
+  text-align: center;
   margin-top: 0;
   color: #f82b47;
-  transform: skewY(20deg);
   margin-bottom: 0;
   padding-right: 1rem;
   padding-left: 1rem;
+  font-size: 3.3vw;
 }
 
 .statvalue {
   color: #000;
-  transform: skewY(20deg);
   margin-bottom: 0;
 }
 
 .statheader {
    margin-bottom: 0;
-   text-align: right;
+   text-align: center;
    color: #f82b47;
    font-weight: 700;
-   transform: skewY(20deg);
    padding-right: 1rem;
    padding-left: 1rem;
+   font-size: 3.3vw;
  }
 
 .banner .blocktype {
@@ -292,18 +272,13 @@ header nav li:first-child {
   margin-top: 0;
   /* margin-bottom: -1.5rem; */
   margin-bottom: -5vw;
-
+  text-transform: uppercase;
   /* new css property */
   /* force each span onto its own line */
   display:block;
 }
 
 /* New selectors */
-
-.uppercase {
-  text-transform: uppercase;
-}
-
   /* Use a clipping mask instead of skewing the media */
 .sergei-clip {
   position: relative;

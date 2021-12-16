@@ -33,13 +33,13 @@ nav ul {
 }
 
 nav a {
-  color: #fad1a6;
+  color: #000;
   text-decoration: none;
   font-weight: 900;
 }
 
 nav a:hover {
-  color: #000;
+  color: #fad1a6;
 }
 
 nav li {
@@ -51,7 +51,7 @@ nav li:first-child {
 }
 
 .temp {
-  color: #fad1a6;
+  color: #000;
   font-weight: 900;
   font-size: 95pt;
   line-height: 1;
