@@ -37,29 +37,27 @@ header nav ul {
 footer {
 background-color: #000;
 color: #f82b47;
-margin-top: 15rem;
+margin-top: 60vw;
+text-align: center;
 }
 
 footer h3 {
-  padding-top: 1rem;
+  padding-top: 4vw;
+  font-size: 4vw;
 }
 
 footer p {
-padding-left: 1rem;
-padding-right: 1rem;
-padding-top: 0.5rem;
+padding-top: 2vw;
 margin-top: -7vw;
 margin-bottom: -1vw;
-}
-
-footer h3, footer p {
-  text-align: center;
+font-size: 3.3vw;
 }
 
 footer ul {
   list-style-type: none;
   display: inline-flex;
   align-items: center;
+  margin-left: -8vw;
 }
 
 header nav a {
@@ -71,9 +69,11 @@ header nav a {
 footer a {
   color: #fad1a6;
   text-decoration: none;
+  text-align: center;
   font-weight: 900;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  font-size: 3.3vw;
 }
 
 header nav a:hover {
@@ -97,13 +97,13 @@ header nav li:first-child {
   /* new css properties */
   /* define a relative positioning system */
   position: relative;
-  top: 4em;
+  top: 10vw;
 }
 
 .sergei .nickname {
   /* font-size: 45pt; */
   font-size: 12.9vw;
-  margin-bottom: -1rem;
+  margin-bottom: -4vw;
   background-color: #000;
   text-align: center;
   font-weight: 900;
@@ -116,28 +116,28 @@ header nav li:first-child {
 .bonk .nickname {
   /* font-size: 45pt; */
   font-size: 12.9vw;
-  margin-bottom: -1rem;
+  margin-bottom: -4vw;
   background-color: #000;
   text-align: center;
   font-weight: 900;
   color: #f82b47;
   /* new css properties */
   position: relative;
-  margin-top: 55vw;
+  margin-top: 54vw;
 }
 
 .sergei .name {
   /* font-size: 20pt; */
   font-size: 5.7vw;
 
-  margin-bottom: 8rem;
+  margin-bottom: 28vw;
   margin-top: 0;
   background-color: #000;
   text-align: center;
   color: #fad1a6;
   /* new css properties */
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2vw;
 }
 
 .bonk .name {
@@ -150,7 +150,7 @@ header nav li:first-child {
   color: #fad1a6;
   /* new css properties */
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2vw;
 }
 
 .sergei img {
@@ -196,24 +196,24 @@ header nav li:first-child {
 .sergei .playerinfo {
   background-color: #fad1a6;
   /* padding-top: 7rem; */
-  padding-top: 1rem;
+  padding-top: 4vw;
   /* margin-top: -10rem; */
   margin-top: -30vw;
 
-  padding-bottom: 8rem;
-  margin-bottom: -18rem;
+  padding-bottom: 28vw;
+  margin-bottom: -65vw;
     /* clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%); */
 }
 
 .bonk .playerinfo {
   background-color: #fad1a6;
   /* padding-top: 7rem; */
-  padding-top: 1rem;
+  padding-top: 4vw;
   /* margin-top: -10rem; */
   margin-top: 0vw;
 
-  padding-bottom: 4rem;
-  margin-bottom: -18rem;
+  padding-bottom: 28vw;
+  margin-bottom: -80vw;
     /* clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%); */
 }
 
@@ -224,6 +224,7 @@ header nav li:first-child {
   font-weight: 400;
   color: #f82b47;
   font-size: 3.3vw;
+  margin-left: -6vw;
 }
 
 .vitals li strong {
@@ -241,8 +242,6 @@ header nav li:first-child {
   margin-top: 0;
   color: #f82b47;
   margin-bottom: 0;
-  padding-right: 1rem;
-  padding-left: 1rem;
   font-size: 3.3vw;
 }
 
@@ -256,8 +255,6 @@ header nav li:first-child {
    text-align: center;
    color: #f82b47;
    font-weight: 700;
-   padding-right: 1rem;
-   padding-left: 1rem;
    font-size: 3.3vw;
  }
 
