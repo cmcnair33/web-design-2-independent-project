@@ -1,7 +1,17 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: #f82b47;
 }
 
@@ -12,6 +22,8 @@ html {
 body {
   margin: 0;
 }
+
+
 header {
   background-color: #f82b47;
   margin: 0;
@@ -26,40 +38,125 @@ header img {
   padding: 1rem;
 }
 
-nav ul {
+header nav ul {
   list-style-type: none;
   display: inline-flex;
   align-items: center;
 }
 
-nav a {
+footer {
+  background-color: #000;
+  color: #f82b47;
+  margin-top: 60vw;
+  text-align: center;
+}
+
+footer h3 {
+  padding-top: 4vw;
+  font-size: 4vw;
+}
+
+footer p {
+  padding-top: 2vw;
+  margin-top: -7vw;
+  margin-bottom: -1vw;
+  font-size: 3.3vw;
+}
+
+footer ul {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  margin-left: -8vw;
+}
+
+header nav a {
   color: #000;
   text-decoration: none;
   font-weight: 900;
 }
 
-nav a:hover {
+footer a {
+  color: #fad1a6;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 900;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  font-size: 3.3vw;
+}
+
+header nav a:hover {
   color: #fad1a6;
 }
 
-nav li {
-  padding: 1rem;
+footer a:hover {
+  color: #f82b47;
 }
 
-nav li:first-child {
-  padding-left: 0rem;
+header nav li {
+  padding: 2.5vw;
 }
 
-.temp {
+header nav li:first-child {
+  padding-left: 0;
+}
+
+.blocktype {
   color: #000;
   font-weight: 900;
-  font-size: 95pt;
-  line-height: 1;
+  /* font-size: 95pt; */
+  font-size: 28.5vw;
+  /* line-height: 1; */
+  line-height: 28.5vw;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: -1.5rem;
+  margin-top: -5vw;
+  /* margin-bottom: -1.5rem; */
+  margin-bottom: -5vw;
+  text-transform: uppercase;
+  /* new css property */
+  /* force each span onto its own line */
+  display: block;
 }
 
-.roster {
-  font-size: 15pt;
+.smallblock {
+  font-weight: 400;
+  font-size: 6vw;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.aboutus {
+  color: #000;
+  position: relative;
+  top: 10vw;
+}
+
+.title {
+  font-size: 12.9vw;
+  margin-bottom: -4vw;
+  background-color: #000;
+  text-align: center;
+  font-weight: 900;
+  color: #f82b47;
+  position: relative;
+  margin-top: -10vw;
+}
+
+.aboutcontent {
+  background-color: #fad1a6;
+  margin-bottom: -65vw;
+}
+
+.bio {
+  padding-top: 4vw;
+  margin-top: 0vw;
+  padding-bottom: 4vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.homies {
+  width: 100%;
+  padding: 0vw;
 }

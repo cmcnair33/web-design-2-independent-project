@@ -104,21 +104,17 @@ header nav li:first-child {
 
 .sergei {
   color: #000;
-  /* new css properties */
-  /* define a relative positioning system */
   position: relative;
   top: 10vw;
 }
 
 .sergei .nickname {
-  /* font-size: 45pt; */
   font-size: 12.9vw;
   margin-bottom: -4vw;
   background-color: #000;
   text-align: center;
   font-weight: 900;
   color: #f82b47;
-  /* new css properties */
   position: relative;
   margin-top: -10vw;
 }
@@ -166,26 +162,18 @@ header nav li:first-child {
 
 .sergei .playerinfo {
   background-color: #fad1a6;
-  /* padding-top: 7rem; */
   padding-top: 4vw;
-  /* margin-top: -10rem; */
   margin-top: -30vw;
-
   padding-bottom: 28vw;
   margin-bottom: -65vw;
-    /* clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%); */
 }
 
 .bonk .playerinfo {
   background-color: #fad1a6;
-  /* padding-top: 7rem; */
   padding-top: 4vw;
-  /* margin-top: -10rem; */
   margin-top: 0vw;
-
   padding-bottom: 28vw;
   margin-bottom: -80vw;
-    /* clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%); */
 }
 
 .vitals li {
@@ -384,3 +372,7 @@ footer h3 {
 footer {
   margin-top: 60vw;
 }
+
+}
+
+@media only screen and (min-width: 60em) {
