@@ -12,6 +12,9 @@ html {
 body {
   margin: 0;
 }
+
+@media only screen and (min-width: 28em) {
+
 header {
   background-color: #f82b47;
   margin: 0;
@@ -26,27 +29,67 @@ header img {
   padding: 1rem;
 }
 
-nav ul {
+header nav ul {
   list-style-type: none;
   display: inline-flex;
   align-items: center;
 }
 
-nav a {
+footer {
+background-color: #000;
+color: #f82b47;
+margin-top: 15rem;
+}
+
+footer h3 {
+  padding-top: 8.5rem;
+}
+
+footer p {
+padding-left: 1rem;
+padding-right: 1rem;
+padding-top: 0.5rem;
+margin-top: -7vw;
+margin-bottom: -1vw;
+}
+
+footer h3, footer p {
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+header nav a {
   color: #fad1a6;
   text-decoration: none;
   font-weight: 900;
 }
 
-nav a:hover {
+footer a {
+  color: #fad1a6;
+  text-decoration: none;
+  font-weight: 900;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header nav a:hover {
   color: #000;
 }
 
-nav li {
+footer a:hover {
+  color: #f82b47;
+}
+
+header nav li {
   padding: 1rem;
 }
 
-nav li:first-child {
+header nav li:first-child {
   padding-left: 0rem;
 }
 
@@ -74,6 +117,23 @@ nav li:first-child {
   position: relative;
 }
 
+.bonk .nickname {
+  /* font-size: 45pt; */
+  font-size: 12.9vw;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-bottom: -1rem;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  transform: skewY(-20deg);
+  font-weight: 900;
+  color: #f82b47;
+  /* new css properties */
+  position: relative;
+  margin-top: 73vw;
+}
+
 .sergei .name {
   /* font-size: 20pt; */
   font-size: 5.7vw;
@@ -88,6 +148,24 @@ nav li:first-child {
   transform: skewY(-20deg);
   /* new css properties */
   position: relative;
+  padding-bottom: 18vw;
+}
+
+.bonk .name {
+  /* font-size: 20pt; */
+  font-size: 5.7vw;
+  padding-right: 1rem;
+  padding-left: 8rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: #fad1a6;
+  transform: skewY(-20deg);
+  /* new css properties */
+  position: relative;
+  padding-bottom: 18vw;
 }
 
 .sergei img {
@@ -116,15 +194,44 @@ nav li:first-child {
   top: -70vw;
 }
 
-.playerinfo {
+.bonk .number {
+  color: #000;
+  /* transform: skewY(20); */
+  /* font-size: 140pt; */
+  font-size: 45vw;
+  /* margin-bottom: -11.5rem; */
+  /* margin-top: -2rem; */
+  font-weight: 900;
+  width: 100%;
+  /* new css properties */
+  position: absolute;
+  top: 200vw;
+}
+
+.sergei .playerinfo {
   background-color: #fad1a6;
   /* padding-top: 7rem; */
-  padding-top: 12vw;
+  padding-top: 0;
   /* margin-top: -10rem; */
-  margin-top: -54vw;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  padding-bottom: 2rem;
+  margin-top: -21vw;
+
+  padding-bottom: 8rem;
+  margin-bottom: -19rem;
+  transform: skewY(-20deg);
+    /* clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%); */
+}
+
+.bonk .playerinfo {
+  background-color: #fad1a6;
+  /* padding-top: 7rem; */
+  padding-top: 0;
+  /* margin-top: -10rem; */
+  margin-top: -21vw;
+
+  padding-bottom: 6rem;
+  margin-bottom: -20rem;
+  transform: skewY(-20deg);
+    /* clip-path: polygon(0 33%, 100% 1%, 100% 100%, 0% 100%); */
 }
 
 .vitals li {
@@ -133,6 +240,9 @@ nav li:first-child {
   list-style: none;
   font-weight: 400;
   color: #f82b47;
+  transform: skewY(20deg);
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .vitals li strong {
@@ -141,16 +251,25 @@ nav li:first-child {
 
 .bio {
   text-align: justify;
+  transform: skewY(20deg);
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .stats {
   text-align: right;
   margin-top: 0;
   color: #f82b47;
+  transform: skewY(20deg);
+  margin-bottom: 0;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .statvalue {
   color: #000;
+  transform: skewY(20deg);
+  margin-bottom: 0;
 }
 
 .statheader {
@@ -158,6 +277,9 @@ nav li:first-child {
    text-align: right;
    color: #f82b47;
    font-weight: 700;
+   transform: skewY(20deg);
+   padding-right: 1rem;
+   padding-left: 1rem;
  }
 
 .banner .blocktype {
@@ -183,12 +305,16 @@ nav li:first-child {
   text-transform: uppercase;
 }
 
-
-.media-clip {
   /* Use a clipping mask instead of skewing the media */
+.sergei-clip {
   position: relative;
-  top: -17.6vw;
-  clip-path: polygon(0 36%, 100% 0, 100% 64%, 0% 100%);
-  background-color: #ccc;
-  height: 99.3vw;
+  width: 100%;
+  object-fit: scale-down;
+  margin-top: -20vw;
+  margin-bottom: -42vw;
+  transform: skewY(20deg);
+  margin-left: 0;
+  margin-right: 0;
+}
+
 }
