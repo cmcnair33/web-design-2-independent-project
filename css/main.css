@@ -172,3 +172,74 @@ header nav li:first-child {
   width: 100%;
   padding: 0vw;
 }
+
+@media only screen and (min-width: 60em) {
+
+.title {
+  font-size: 6vw;
+  margin-bottom: -2vw;
+  background-color: #000;
+  text-align: center;
+  font-weight: 900;
+  color: #f82b47;
+  position: relative;
+  margin-top: -15vw;
+}
+
+.arenatitle {
+  font-size: 6vw;
+  margin-bottom: -2vw;
+  background-color: #000;
+  text-align: center;
+  font-weight: 900;
+  color: #f82b47;
+  position: relative;
+  margin-top: 2vw;
+}
+
+nav ul li a {
+  font-size: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+nav ul li a:first-child {
+  padding-left: 10vw;
+}
+
+footer h2, footer p, footer li a {
+  font-size: 2vw;
+}
+
+footer h2 {
+  padding-bottom: 4vw;
+  margin-top: 1vw;
+}
+
+footer {
+  margin-top: 75vw;
+}
+
+.aboutcontent {
+  padding-bottom: 2vw;
+}
+.blocktype {
+  font-size: 15vw;
+  margin-top: -16vw;
+}
+
+.smallblock {
+  margin-top: -7vw;
+  margin-bottom: 8vw;
+  display: inline-block;
+  font-size: 4vw;
+}
+
+.smallblock::first-line {
+  margin-top: -7vw;
+}
+.blocktype:first-line {
+  padding-top: 50vw;
+}
+
+}
