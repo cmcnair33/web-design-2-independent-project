@@ -47,11 +47,11 @@ header nav ul {
 footer {
   background-color: #000;
   color: #f82b47;
-  margin-top: 60vw;
+  margin-top: 75vw;
   text-align: center;
 }
 
-footer h3 {
+footer h2 {
   padding-top: 4vw;
   font-size: 4vw;
 }
@@ -105,17 +105,12 @@ header nav li:first-child {
 .blocktype {
   color: #000;
   font-weight: 900;
-  /* font-size: 95pt; */
   font-size: 28.5vw;
-  /* line-height: 1; */
   line-height: 28.5vw;
   padding: 0;
   margin-top: -5vw;
-  /* margin-bottom: -1.5rem; */
   margin-bottom: -5vw;
   text-transform: uppercase;
-  /* new css property */
-  /* force each span onto its own line */
   display: block;
 }
 
@@ -124,9 +119,10 @@ header nav li:first-child {
   font-size: 6vw;
   align-items: center;
   text-transform: uppercase;
+  font-style: italic;
 }
 
-.aboutus {
+.aboutus, .aboutarena {
   color: #000;
   position: relative;
   top: 10vw;
@@ -143,12 +139,28 @@ header nav li:first-child {
   margin-top: -10vw;
 }
 
+.arenatitle {
+  font-size: 12.9vw;
+  margin-bottom: -4vw;
+  background-color: #000;
+  text-align: center;
+  font-weight: 900;
+  color: #f82b47;
+  position: relative;
+  margin-top: 0vw;
+}
+
 .aboutcontent {
+  background-color: #fad1a6;
+  margin-bottom: -5vw;
+}
+
+.aboutarena {
   background-color: #fad1a6;
   margin-bottom: -65vw;
 }
 
-.bio {
+.bio, .arenabio {
   padding-top: 4vw;
   margin-top: 0vw;
   padding-bottom: 4vw;
@@ -156,7 +168,7 @@ header nav li:first-child {
   padding-right: 2vw;
 }
 
-.homies {
+.homies, .arena {
   width: 100%;
   padding: 0vw;
 }
