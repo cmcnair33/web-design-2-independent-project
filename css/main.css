@@ -106,12 +106,11 @@ header nav li:first-child {
   padding-left: 0;
 }
 
-.blocktype {
+.blocktype1, .blocktype2 {
   color: #000;
   font-weight: 900;
   font-size: 28.5vw;
   line-height: 28.5vw;
-  padding: 0;
   margin-top: -5vw;
   margin-bottom: -5vw;
   text-transform: uppercase;
@@ -233,9 +232,13 @@ header nav li:first-child {
     padding-bottom: 2vw;
   }
 
-  .blocktype {
+  .blocktype1, .blocktype2 {
     font-size: 15vw;
     margin-top: -16vw;
+  }
+
+  .blocktype1 {
+    margin-top: -8vw;
   }
 
   .smallblock {

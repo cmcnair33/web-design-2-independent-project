@@ -11,7 +11,7 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: "Outfit", sans-serif;
+  font-family: Outfit, sans-serif;
   background-color: #f82b47;
 }
 
@@ -19,10 +19,14 @@ html {
   box-sizing: inherit;
 }
 
+.skip-links {
+  position: absolute;
+  top: -15vw;
+}
+
 body {
   margin: 0;
 }
-
 
 header {
   background-color: #f82b47;
@@ -51,7 +55,7 @@ footer {
   text-align: center;
 }
 
-footer h2 {
+footer h3 {
   padding-top: 4vw;
   font-size: 4vw;
 }
@@ -102,14 +106,153 @@ header nav li:first-child {
   padding-left: 0;
 }
 
-.blocktype {
+.blocktype1, .blocktype2 {
   color: #000;
   font-weight: 900;
   font-size: 28.5vw;
   line-height: 28.5vw;
-  padding: 0;
   margin-top: -5vw;
   margin-bottom: -5vw;
   text-transform: uppercase;
   display: block;
+}
+
+.smallblock {
+  font-weight: bold;
+  font-size: 6vw;
+  align-items: center;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.smallblock:first-child {
+  margin-bottom: -3vw;
+  margin-top: -3vw;
+}
+
+.aboutus, .aboutarena {
+  color: #000;
+  position: relative;
+  top: 10vw;
+}
+
+.title {
+  font-size: 12.9vw;
+  margin-bottom: -4vw;
+  background-color: #000;
+  text-align: center;
+  font-weight: 900;
+  color: #f82b47;
+  position: relative;
+  margin-top: -10vw;
+}
+
+.arenatitle {
+  font-size: 12.9vw;
+  margin-bottom: -4vw;
+  background-color: #000;
+  text-align: center;
+  font-weight: 900;
+  color: #f82b47;
+  position: relative;
+  margin-top: 0;
+}
+
+.aboutcontent {
+  background-color: #fad1a6;
+  margin-bottom: -5vw;
+}
+
+.aboutarena {
+  background-color: #fad1a6;
+  margin-bottom: -65vw;
+}
+
+.bio, .arenabio {
+  padding-top: 4vw;
+  margin-top: 0;
+  padding-bottom: 4vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.homies, .arena {
+  width: 100%;
+  padding: 0;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .title {
+    font-size: 6vw;
+    margin-bottom: -2vw;
+    background-color: #000;
+    text-align: center;
+    font-weight: 900;
+    color: #f82b47;
+    position: relative;
+    margin-top: -15vw;
+  }
+
+  .arenatitle {
+    font-size: 6vw;
+    margin-bottom: -2vw;
+    background-color: #000;
+    text-align: center;
+    font-weight: 900;
+    color: #f82b47;
+    position: relative;
+    margin-top: 2vw;
+  }
+
+  nav ul li a {
+    font-size: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  nav ul li a:first-child {
+    padding-left: 10vw;
+  }
+
+  footer h3, footer p, footer li a {
+    font-size: 2vw;
+  }
+
+  footer h3 {
+    padding-bottom: 4vw;
+    margin-top: 1vw;
+  }
+
+  footer {
+    margin-top: 75vw;
+  }
+
+  .aboutcontent {
+    padding-bottom: 2vw;
+  }
+
+  .blocktype1, .blocktype2 {
+    font-size: 15vw;
+    margin-top: -16vw;
+  }
+
+.blocktype1 {
+  margin-top: -8vw;
+}
+  .smallblock {
+    margin-top: -7vw;
+    margin-bottom: 8vw;
+    display: inline-block;
+    font-size: 4vw;
+  }
+
+  .smallblock::first-line {
+    margin-top: -7vw;
+  }
+
+  .blocktype::first-line {
+    padding-top: 50vw;
+  }
+
 }
